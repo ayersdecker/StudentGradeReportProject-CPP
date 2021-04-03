@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+class Student {
+public:
+    string Name;
+    int Year;
+    int Grade;
+    string Teacher;
+    bool Pass;
+    Student(string Name, int Year, int Grade, string Teacher, bool Pass) {
+        this->Name = Name;
+        this->Year = Year;
+        this->Grade = Grade;
+        this->Teacher = Teacher;
+        this->Pass = Pass;
+    }
+
+};
+int main(void) {
+    Student Pupil1("Dave B.", 9, 100, "Joe Opt's", true);
+    Student Pupil2("Sara L.", 9, 82, "Tee Rex's", true);
+    Student Pupil3("Aunt J.", 10, 93, "Joe Opt's", true);
+    Student Pupil4("Mara S.", 10, 84, "Tee Rex's", true);
+   
+
+    std::cout << Pupil1.Name << " is in Year " << Pupil1.Year << ".\n"
+        << Pupil1.Name << " is in " << Pupil1.Teacher << " class.\n"
+        << Pupil1.Name << " Grade Point Average (GPA) is: " << Pupil1.Grade << "\n"
+        << "Is " << Pupil1.Name << " Passing? " << boolalpha << Pupil1.Pass << "\n";
+
+    std::cout << Pupil2.Name << " is in Year " << Pupil2.Year << ".\n"
+        << Pupil2.Name << " is in " << Pupil2.Teacher << " class.\n"
+        << Pupil2.Name << " Grade Point Average (GPA) is: " << Pupil2.Grade << "\n"
+        << "Is " << Pupil2.Name << " Passing? " << boolalpha << Pupil2.Pass << "\n";
+
+    std::cout << Pupil3.Name << " is in Year " << Pupil3.Year << ".\n"
+        << Pupil3.Name << " is in " << Pupil3.Teacher << " class.\n"
+        << Pupil3.Name << " Grade Point Average (GPA) is: " << Pupil3.Grade << "\n"
+        << "Is " << Pupil3.Name << " Passing? " << boolalpha << Pupil3.Pass << "\n";
+
+    std::cout << Pupil4.Name << " is in Year " << Pupil4.Year << ".\n"
+        << Pupil4.Name << " is in " << Pupil4.Teacher << " class.\n"
+        << Pupil4.Name << " Grade Point Average (GPA) is: " << Pupil4.Grade << "\n"
+        << "Is " << Pupil4.Name << " Passing? " << boolalpha << Pupil4.Pass << "\n";
+
+}
